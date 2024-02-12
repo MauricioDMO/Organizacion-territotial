@@ -1,0 +1,379 @@
+CREATE TABLE departamentos (
+  id int NOT NULL PRIMARY KEY,
+  nombre varchar(50) NOT NULL
+)
+
+CREATE TABLE municipios (
+  id int NOT NULL PRIMARY KEY,
+  nombre varchar(50) NOT NULL,
+  departamento_id int NOT NULL,
+  FOREIGN KEY (departamento_id) REFERENCES departamentos(id)
+)
+
+CREATE TABLE distritos (
+  id int NOT NULL PRIMARY KEY,
+  nombre varchar(50) NOT NULL,
+  municipio_id int NOT NULL,
+  FOREIGN KEY (municipio_id) REFERENCES municipios(id)
+)
+
+INSERT INTO departamentos (id , nombre) VALUES (1, 'Ahuachapan');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (1, 'Ahuachapan Norte', 1);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (1, 'Atiquizaya', 1);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (2, 'El Refugio', 1);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (3, 'San Lorenzo', 1);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (4, 'Turín', 1);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (2, 'Ahuachapan Centro', 1);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (5, 'Ahuachapán', 2);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (6, 'Apaneca', 2);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (7, 'Concepción De Ataco', 2);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (8, 'Tacuba', 2);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (3, 'Ahuachapan Sur', 1);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (9, 'Guaymango', 3);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (10, 'Jujutla', 3);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (11, 'San Francisco Menéndez', 3);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (12, 'San Pedro Puxtla', 3);
+INSERT INTO departamentos (id , nombre) VALUES (2, 'San Salvador');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (4, 'San Salvador Norte', 2);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (13, 'Aguilares', 4);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (14, 'El Paisnal', 4);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (15, 'Guazapa', 4);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (5, 'San Salvador Oeste', 2);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (16, 'Apopa', 5);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (17, 'Nejapa', 5);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (6, 'San Salvador Este', 2);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (18, 'Ilopango', 6);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (19, 'San Martín', 6);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (20, 'Soyapango', 6);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (21, 'Tonacatepeque', 6);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (7, 'San Salvador Centro', 2);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (22, 'Ayutuxtepeque', 7);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (23, 'Mejicanos', 7);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (24, 'San Salvador', 7);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (25, 'Cuscatancingo', 7);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (26, 'Ciudad Delgado', 7);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (8, 'San Salvador Sur', 2);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (27, 'Panchimalco', 8);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (28, 'Rosario De Mora', 8);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (29, 'San Marcos', 8);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (30, 'Santo Tomás', 8);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (31, 'Santiago Texacuangos', 8);
+INSERT INTO departamentos (id , nombre) VALUES (3, 'La Libertad');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (9, 'La Libertad Norte', 3);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (32, 'Quezaltepeque', 9);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (33, 'San Matías', 9);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (34, 'San Pablo Tacachico', 9);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (10, 'La Libertad Centro', 3);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (35, 'San Juan Opico', 10);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (36, 'Ciudad Arce', 10);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (11, 'La Libertad Oeste', 3);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (37, 'Colón', 11);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (38, 'Jayaque', 11);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (39, 'Sacacoyo', 11);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (40, 'Tepecoyo', 11);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (41, 'Talnique', 11);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (12, 'La Libertad Este', 3);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (42, 'Antiguo Cuscatlán', 12);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (43, 'Huizúcar', 12);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (44, 'Nuevo Cuscatlán', 12);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (45, 'San José Villanueva', 12);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (46, 'Zaragoza', 12);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (13, 'La Libertad Costa', 3);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (47, 'Chiltiupán', 13);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (48, 'Jicalapa', 13);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (49, 'La Libertad', 13);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (50, 'Tamanique', 13);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (51, 'Teotepeque', 13);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (14, 'La Libertad Sur', 3);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (52, 'Comasagua', 14);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (53, 'Santa Tecla', 14);
+INSERT INTO departamentos (id , nombre) VALUES (4, 'Chalatenango');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (15, 'Chalatenango Norte', 4);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (54, 'La Palma ', 15);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (55, 'Citalá', 15);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (56, 'San Ignacio', 15);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (16, 'Chalatenango Centro', 4);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (57, 'Nueva Concepción', 16);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (58, 'Tejutla', 16);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (59, 'La Reina', 16);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (60, 'Agua Caliente', 16);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (61, 'Dulce Nombre De María', 16);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (62, 'El Paraíso', 16);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (63, 'San Fernando', 16);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (64, 'San Francisco Morazán', 16);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (65, 'San Rafael', 16);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (66, 'Santa Rita', 16);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (17, 'Chalatenango Sur', 4);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (67, 'Chalatenango', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (68, 'Arcatao', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (69, 'Azacualpa', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (70, 'Comalapa', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (71, 'Concepción Quezaltepeque', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (72, 'El Carrizal', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (73, 'La Laguna', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (74, 'Las Vueltas', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (75, 'Nombre De Jesús', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (76, 'Nueva Trinidad', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (77, 'Ojos De Agua', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (78, 'Potonico', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (79, 'San Antonio De La Cruz', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (80, 'San Antonio Los Ranchos', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (81, 'San Francisco Lempa', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (82, 'San Isidro Labrador', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (83, 'San José Cancasque', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (84, 'San Miguel De Mercedes', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (85, 'San José Las Flores', 17);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (86, 'San Luis Del Carmen', 17);
+INSERT INTO departamentos (id , nombre) VALUES (5, 'Cuscatlan');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (18, 'Cuscatlán Norte', 5);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (87, 'Suchitoto', 18);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (88, 'San José Guayabal', 18);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (89, 'Oratorio De Concepción', 18);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (90, 'San Bartolomé Perulapía', 18);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (91, 'San Pedro Perulapán', 18);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (19, 'Cuscatlán Sur', 5);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (92, 'Cojutepeque', 19);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (93, 'San Rafael Cedros', 19);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (94, 'Candelaria', 19);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (95, 'Monte San Juan', 19);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (96, 'El Carmen', 19);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (97, 'San Cristobal', 19);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (98, 'Santa Cruz Michapa', 19);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (99, 'San Ramón', 19);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (100, 'El Rosario', 19);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (101, 'Santa Cruz Analquito', 19);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (102, 'Tenancingo', 19);
+INSERT INTO departamentos (id , nombre) VALUES (6, 'Cabañas');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (20, 'Cabañas Este', 6);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (103, 'Sensuntepeque', 20);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (104, 'Victoria', 20);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (105, 'Dolores', 20);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (106, 'Guacotecti', 20);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (107, 'San Isidro', 20);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (21, 'Cabañas Oeste', 6);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (108, 'Ilobasco', 21);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (109, 'Tejutepeque', 21);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (110, 'Jutiapa', 21);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (111, 'Cinquera', 21);
+INSERT INTO departamentos (id , nombre) VALUES (7, 'La Paz');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (22, 'La Paz Oeste', 7);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (112, 'Cuyultitan', 22);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (113, 'Olocuilta', 22);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (114, 'San Juan Talpa', 22);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (115, 'San Luis Talpa', 22);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (116, 'San Pedro Masahuat', 22);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (117, 'Tapalhuaca', 22);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (118, 'San Francisco Chinameca', 22);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (23, 'La Paz Centro', 7);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (119, 'El Rosario', 23);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (120, 'Jerusalén', 23);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (121, 'Mercedes La Ceiba', 23);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (122, 'Paraíso De Osorio', 23);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (123, 'San Antonio Masahuat', 23);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (124, 'San Emigdio', 23);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (125, 'San Juan Tepezontes', 23);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (126, 'San Luís La Herradura', 23);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (127, 'San Miguel Tepezontes', 23);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (128, 'San Pedro Nonualco', 23);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (129, 'Santa María Ostuma', 23);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (130, 'Santiago Nonualco', 23);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (24, 'La Paz Este', 7);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (131, 'San Juan Nonualco', 24);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (132, 'San Rafael Obrajuelo', 24);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (133, 'Zacatecoluca', 24);
+INSERT INTO departamentos (id , nombre) VALUES (8, 'La Unión');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (25, 'La Unión Norte', 8);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (134, 'Anamorós', 25);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (135, 'Bolivar', 25);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (136, 'Concepción De Oriente', 25);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (137, 'El Sauce', 25);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (138, 'Lislique', 25);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (139, 'Nueva Esparta', 25);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (140, 'Pasaquina', 25);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (141, 'Polorós', 25);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (142, 'San José La Fuente', 25);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (143, 'Santa Rosa De Lima', 25);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (26, 'La Unión Sur', 8);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (144, 'Conchagua', 26);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (145, 'El Carmen', 26);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (146, 'Intipucá', 26);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (147, 'La Unión', 26);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (148, 'Meanguera Del Golfo', 26);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (149, 'San Alejo', 26);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (150, 'Yayantique', 26);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (151, 'Yucuaiquín', 26);
+INSERT INTO departamentos (id , nombre) VALUES (9, 'Usulután');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (27, 'Usulután Norte', 9);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (152, 'Santiago De María', 27);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (153, 'Alegría', 27);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (154, 'Berlín', 27);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (155, 'Mercedes Umaña', 27);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (156, 'Jucuapa', 27);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (157, 'El Triunfo', 27);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (158, 'Estanzuelas', 27);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (159, 'San Buenaventura', 27);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (160, 'Nueva Granada', 27);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (28, 'Usulután Este', 9);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (161, 'Usulután', 28);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (162, 'Jucuarán', 28);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (163, 'San Dionisio', 28);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (164, 'Concepción Batres', 28);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (165, 'Santa María', 28);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (166, 'Ozatlán', 28);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (167, 'Tecapán', 28);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (168, 'Santa Elena', 28);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (169, 'California', 28);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (170, 'Ereguayquín', 28);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (29, 'Usulután Oeste', 9);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (171, 'Jiquilisco', 29);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (172, 'Puerto El Triunfo', 29);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (173, 'San Agustín', 29);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (174, 'San Francisco Javier', 29);
+INSERT INTO departamentos (id , nombre) VALUES (10, 'Sonsonate');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (30, 'Sonsonate Norte', 10);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (175, 'Juayua', 30);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (176, 'Nahuizalco', 30);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (177, 'Salcoatitán', 30);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (178, 'Santa Catarina Masahuat', 30);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (31, 'Sonsonate Centro', 10);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (179, 'Sonsonate', 31);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (180, 'Sonzacate', 31);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (181, 'Nahulingo', 31);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (182, 'San Antonio Del Monte', 31);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (183, 'Santo Domingo De Guzmán', 31);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (32, 'Sonsonate Este', 10);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (184, 'Izalco', 32);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (185, 'Armenia', 32);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (186, 'Caluco', 32);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (187, 'San Julián', 32);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (188, 'Cuisnahuat', 32);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (189, 'Santa Isabel Ishuatán', 32);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (33, 'Sonsonate Oeste', 10);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (190, 'Acajutla', 33);
+INSERT INTO departamentos (id , nombre) VALUES (11, 'Santa Ana');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (34, 'Santa Ana Norte', 11);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (191, 'Masahuat', 34);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (192, 'Metapán', 34);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (193, 'Santa Rosa Guachipilín', 34);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (194, 'Texistepeque', 34);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (35, 'Santa Ana Centro', 11);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (195, 'Santa Ana', 35);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (36, 'Santa Ana Este', 11);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (196, 'Coatepeque', 36);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (197, 'El Congo', 36);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (37, 'Santa Ana Oeste', 11);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (198, 'Candelaria De La Frontera', 37);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (199, 'Chalchuapa', 37);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (200, 'El Porvenir', 37);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (201, 'San Antonio Pajonal', 37);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (202, 'San Sebastián Salitrillo', 37);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (203, 'Santiago De La Frontera', 37);
+INSERT INTO departamentos (id , nombre) VALUES (12, 'San Vicente');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (38, 'San Vicente Norte', 12);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (204, 'Apastepeque', 38);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (205, 'Santa Clara', 38);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (206, 'San Ildefonso', 38);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (207, 'San Esteban Catarina', 38);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (208, 'San Sebastián', 38);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (209, 'San Lorenzo', 38);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (210, 'Santo Domingo', 38);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (39, 'San Vicente Sur', 12);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (211, 'San Vicente', 39);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (212, 'Guadalupe', 39);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (213, 'Verapaz', 39);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (214, 'Tepetitán', 39);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (215, 'Tecoluca', 39);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (216, 'San Cayetano Istepeque', 39);
+INSERT INTO departamentos (id , nombre) VALUES (13, 'San Miguel');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (40, 'San Miguel Norte', 13);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (217, 'Ciudad Barrios', 40);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (218, 'Sesori', 40);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (219, 'Nuevo Edén De San Juan', 40);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (220, 'San Gerardo', 40);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (221, 'San Luis De La Reina', 40);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (222, 'Carolina', 40);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (223, 'San Antonio Del Mosco', 40);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (224, 'Chapeltique', 40);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (41, 'San Miguel Centro', 13);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (225, 'San Miguel', 41);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (226, 'Comacarán', 41);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (227, 'Uluazapa', 41);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (228, 'Moncagua', 41);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (229, 'Quelepa', 41);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (230, 'Chirilagua', 41);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (42, 'San Miguel Oeste', 13);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (231, 'Chinameca', 42);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (232, 'Nueva Guadalupe', 42);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (233, 'Lolotique', 42);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (234, 'San Jorge', 42);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (235, 'San Rafael Oriente', 42);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (236, 'El Tránsito', 42);
+INSERT INTO departamentos (id , nombre) VALUES (14, 'Morazán');
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (43, 'Morazán Norte', 14);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (237, 'Arambala', 43);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (238, 'Cacaopera', 43);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (239, 'Corinto', 43);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (240, 'El Rosario', 43);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (241, 'Joateca', 43);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (242, 'Jocoaitique', 43);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (243, 'Meanguera', 43);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (244, 'Perquín', 43);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (245, 'San Fernando', 43);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (246, 'San Isidro', 43);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (247, 'Torola', 43);
+INSERT INTO municipios (id , nombre, departamento_id) VALUES (44, 'Morazán Sur', 14);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (248, 'Chilanga', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (249, 'Delicias De Concepción', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (250, 'El Divisadero', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (251, 'Gualococti', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (252, 'Guatajiagua', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (253, 'Jocoro', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (254, 'Lolotiquillo', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (255, 'Osicala', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (256, 'San Carlos', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (257, 'San Francisco Gotera', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (258, 'San Simón', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (259, 'Sensembra', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (260, 'Sociedad', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (261, 'Yamabal', 44);
+INSERT INTO distritos (id , nombre, municipio_id) VALUES (262, 'Yoloaiquín', 44);
+
+
+CREATE FUNCTION ObtenerDireccion
+(
+    @Nombre varchar(50),
+    @Lugar varchar(50)
+)
+RETURNS @TablaResultado TABLE
+(
+    Departamento varchar(50),
+    Municipio varchar(50),
+    Distrito varchar(50)
+)
+AS
+BEGIN
+
+    IF (@Nombre = 'Distrito')
+      BEGIN
+	    INSERT INTO @TablaResultado (Departamento, Municipio, Distrito)
+        SELECT d.nombre, m.nombre, @Lugar
+		FROM dbo.distritos
+		LEFT JOIN dbo.municipios AS m
+		ON m.id = distritos.municipio_id
+		LEFT JOIN dbo.departamentos AS d
+		ON m.departamento_id = d.id
+		WHERE dbo.distritos.nombre LIKE @Lugar
+	  END
+
+    ELSE IF (@Nombre = 'Municipio')
+	  BEGIN
+        INSERT INTO @TablaResultado (Departamento, Municipio)
+        SELECT d.nombre, @Lugar
+		FROM dbo.municipios AS m
+		LEFT JOIN dbo.departamentos AS d
+		ON m.departamento_id = d.id
+		WHERE m.nombre LIKE @Lugar
+	  END
+
+    RETURN
+END
