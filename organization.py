@@ -1,5 +1,4 @@
 organization = """DEPARTAMENTO DE AHUACHAPAN
-CABECERA DEPARTAMENTAL AHUACHAPAN CENTRO
 MUNICIPIO DE AHUACHAPAN NORTE
 Distrito de Atiquizaya
 Distrito de El Refugio
@@ -16,7 +15,6 @@ Distrito de Jujutla
 Distrito de San Francisco Menéndez
 Distrito de San Pedro Puxtla
 DEPARTAMENTO DE SAN SALVADOR
-CABECERA DEPARTAMENTAL SAN SALVADOR CENTRO
 MUNICIPIO DE SAN SALVADOR NORTE
 Distrito de Aguilares
 Distrito de El Paisnal
@@ -42,7 +40,6 @@ Distrito de San Marcos
 Distrito de Santo Tomás
 Distrito de Santiago Texacuangos
 DEPARTAMENTO DE LA LIBERTAD
-CABECERA DEPARTAMENTAL LA LIBERTAD SUR
 MUNICIPIO DE LA LIBERTAD NORTE
 Distrito de Quezaltepeque
 Distrito de San Matías
@@ -72,7 +69,6 @@ MUNICIPIO DE LA LIBERTAD SUR
 Distrito de Comasagua
 Distrito de Santa Tecla
 DEPARTAMENTO DE CHALATENANGO
-CABECERA DEPARTAMENTAL CHALATENANGO SUR
 MUNICIPIO DE CHALATENANGO NORTE
 Distrito de La Palma 
 Distrito de Citalá
@@ -110,7 +106,6 @@ Distrito de San Miguel de Mercedes
 Distrito de San José Las Flores
 Distrito de San Luis del Carmen
 DEPARTAMENTO DE CUSCATLAN
-CABECERA DEPARTAMENTAL CUSCATLÁN SUR
 MUNICIPIO DE CUSCATLÁN NORTE
 Distrito de Suchitoto
 Distrito de San José Guayabal
@@ -130,7 +125,6 @@ Distrito de El Rosario
 Distrito de Santa Cruz Analquito
 Distrito de Tenancingo
 DEPARTAMENTO DE CABAÑAS
-CABECERA DEPARTAMENTAL CABAÑAS ESTE
 MUNICIPIO DE CABAÑAS ESTE
 Distrito de Sensuntepeque
 Distrito de Victoria
@@ -143,7 +137,6 @@ Distrito de Tejutepeque
 Distrito de Jutiapa
 Distrito de Cinquera
 DEPARTAMENTO DE LA PAZ
-CABECERA DEPARTAMENTAL LA PAZ ESTE
 MUNICIPIO DE LA PAZ OESTE
 Distrito de Cuyultitan
 Distrito de Olocuilta
@@ -170,7 +163,6 @@ Distrito de San Juan Nonualco
 Distrito de San Rafael Obrajuelo
 Distrito de Zacatecoluca
 DEPARTAMENTO DE LA UNIÓN
-CABECERA DEPARTAMENTAL LA UNIÓN SUR
 MUNICIPIO DE LA UNIÓN NORTE
 Distrito de Anamorós
 Distrito de Bolivar
@@ -192,7 +184,6 @@ Distrito de San Alejo
 Distrito de Yayantique
 Distrito de Yucuaiquín
 DEPARTAMENTO DE USULUTÁN
-CABECERA DEPARTAMENTAL USULUTÁN ESTE
 MUNICIPIO DE USULUTÁN NORTE
 Distrito de Santiago de María
 Distrito de Alegría
@@ -220,7 +211,6 @@ Distrito de Puerto El Triunfo
 Distrito de San Agustín
 Distrito de San Francisco Javier
 DEPARTAMENTO DE SONSONATE
-CABECERA DEPARTAMENTAL SONSONATE CENTRO
 MUNICIPIO DE SONSONATE NORTE
 Distrito de Juayua
 Distrito de Nahuizalco
@@ -242,7 +232,6 @@ Distrito de Santa Isabel Ishuatán
 MUNICIPIO DE SONSONATE OESTE
 Distrito de Acajutla
 DEPARTAMENTO DE SANTA ANA
-CABECERA DEPARTAMENTAL SANTA ANA CENTRO
 MUNICIPIO DE SANTA ANA NORTE
 Distrito de Masahuat
 Distrito de Metapán
@@ -261,7 +250,6 @@ Distrito de San Antonio Pajonal
 Distrito de San Sebastián Salitrillo
 Distrito de Santiago de La Frontera
 DEPARTAMENTO DE SAN VICENTE
-CABECERA DEPARTAMENTAL SAN VICENTE SUR
 MUNICIPIO DE SAN VICENTE NORTE
 Distrito de Apastepeque
 Distrito de Santa Clara
@@ -278,7 +266,6 @@ Distrito de Tepetitán
 Distrito de Tecoluca
 Distrito de San Cayetano Istepeque
 DEPARTAMENTO DE SAN MIGUEL
-CABECERA DEPARTAMENTAL SAN MIGUEL CENTRO
 MUNICIPIO DE SAN MIGUEL NORTE
 Distrito de Ciudad Barrios
 Distrito de Sesori
@@ -303,7 +290,6 @@ Distrito de San Jorge
 Distrito de San Rafael Oriente
 Distrito de El Tránsito
 DEPARTAMENTO DE MORAZÁN
-CABECERA DEPARTAMENTAL MORAZÁN SUR
 MUNICIPIO DE MORAZÁN NORTE
 Distrito de Arambala
 Distrito de Cacaopera
