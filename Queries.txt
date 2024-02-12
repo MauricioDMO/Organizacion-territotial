@@ -1,21 +1,21 @@
 CREATE TABLE departamentos (
   id int NOT NULL PRIMARY KEY,
   nombre varchar(50) NOT NULL
-)
+);
 
 CREATE TABLE municipios (
   id int NOT NULL PRIMARY KEY,
   nombre varchar(50) NOT NULL,
   departamento_id int NOT NULL,
   FOREIGN KEY (departamento_id) REFERENCES departamentos(id)
-)
+);
 
 CREATE TABLE distritos (
   id int NOT NULL PRIMARY KEY,
   nombre varchar(50) NOT NULL,
   municipio_id int NOT NULL,
   FOREIGN KEY (municipio_id) REFERENCES municipios(id)
-)
+);
 
 INSERT INTO departamentos (id , nombre) VALUES (1, 'Ahuachapan');
 INSERT INTO municipios (id , nombre, departamento_id) VALUES (1, 'Ahuachapan Norte', 1);
