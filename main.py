@@ -1,3 +1,3 @@
-from convert_to_object import ORGANIZATION_OBJECT
+from convert_to_query import READ_FILE
 
-print(ORGANIZATION_OBJECT)
+print(READ_FILE)
