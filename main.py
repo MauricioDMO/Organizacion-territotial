@@ -1,3 +1,3 @@
-from organization import organization
+from convert_to_object import ORGANIZATION_OBJECT
 
-print(organization)
+print(ORGANIZATION_OBJECT)
